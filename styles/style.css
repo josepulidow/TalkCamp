@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#18b7d7), to(#143ab8));
+  background: linear-gradient(90deg, #18b7d7, #143ab8);
+}
+
+.menu-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu-toggle .items-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu-toggle .items-toggle li {
+  margin: 10px;
+  padding: 5px;
+  list-style: none;
+}
+
+.menu-toggle .items-toggle li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.presentation h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 5px;
+  padding: 5px;
+}
+
+.presentation p {
+  text-align: center;
+  color: #fff;
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.how-to-add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.how-to-add .instructions {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.how-to-add .instructions h2 {
+  margin: 5px 0 5px 0;
+}
+
+.how-to-add .instructions ol li {
+  margin: 10px 0 10px 10px;
+  font-size: 18px;
+  line-height: 2;
+}
+/*# sourceMappingURL=style.css.map */
