@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -39,37 +39,42 @@
                 <h2>¿Como añadir un comentario?</h2>
                 <ol>
                     <li>Llena los campos que se te muestran.</li>
-                    <li>Al finalizar da clic en añadir.</li>
-                    <li>Listo, tu comentario aparecera, <span>¡Agrega los comentarios que desees!</span> </li>
+                    <li>Al finalizar da clic en el boton verde.</li>
+                    <li>Listo, tu comentario aparecera en la parte ded abajo, <span>¡Agrega los comentarios que
+                            desees!</span> </li>
                 </ol>
             </div>
         </div>
 
 
         <div class="container">
-            <form>
-                <div class="form">
-                    <h3></h3>
-                    <div class="general-data">
-                        <label for="name">Nombre:</label>
-                        <input type="text" id="name">
-                        <label for="first-name">Apellido:</label>
-                        <input type="text" id="first-name">
-                    </div>
+            <div class="form">
+                <h3>Escribe tu comentario aquí</h3>
+                <div class="general-data">
+                    <img src="./sources/icon-message.png" alt="">
+                    <input type="text" id="name" placeholder="Escribe aquí tu nombre">
+                </div>
+                <div>
                     <textarea name="message" id="message" cols="30" rows="10"
-                        placeholder="Escribe tu mensaje aqui"></textarea>
-                    <div class="button-bar">
-                        <button class="reload">
-                            <ion-icon name="reload-outline"></ion-icon>
-                        </button>
-                        <button class="send">
-                            <ion-icon name="send-outline"></ion-icon>
-                        </button>
-                    </div>
-
-
-            </form>
+                        placeholder="Escribe aquí tu mensaje"></textarea>
+                </div>
+                <div class="button-bar">
+                    <button class="send">
+                        <ion-icon name="send-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
         </div>
+
+        <div class="container-comments">
+            <ul class="comment">
+
+            </ul>
+            <div class="empty">
+                <p>Aún no agregas un comentario</p>
+            </div>
+        </div>
+
     </main>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
