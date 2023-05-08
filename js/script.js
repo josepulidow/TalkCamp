@@ -15,25 +15,30 @@ close.addEventListener('click', () => {
     nav.classList.remove('visible');
 });
 
+
 addBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
     const text = name.value;
     const message = comment.value;
 
-    const li = document.createElement('li');
-    const h4 = document.createElement('h4');
-    const p = document.createElement('p');
-    h4.textContent = text;
-    p.textContent = message;
+    if (text && message !== '') {
+        const li = document.createElement('li');
+        const h4 = document.createElement('h4');
+        const p = document.createElement('p');
+        h4.textContent = text;
+        p.textContent = message;
+        li.className = 'comments'
 
-    li.appendChild(h4);
-    li.appendChild(p);
-    li.appendChild(deleteBtn());
-    ul.appendChild(li);
+        ul.appendChild(li);
+        li.appendChild(h4);
+        li.appendChild(p);
+        li.appendChild(deleteBtn());
 
-    name.value = '';
-    comment.value = '';
+        name.value = '';
+        comment.value = '';
+        empty.style.display = 'none';
+    }
 });
 
 function deleteBtn() {
@@ -45,6 +50,11 @@ function deleteBtn() {
     deleteBtn.addEventListener('click', (e) => {
         const removeComment = e.target.parentElement;
         ul.removeChild(removeComment);
+
+        const noComent = document.querySelectorAll('.comments');
+        if (noComent.length == 0) {
+            empty.style.display = 'block';
+        }
     });
     return deleteBtn;
 }
