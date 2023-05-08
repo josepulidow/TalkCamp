@@ -179,6 +179,11 @@ header {
         background-color: #f1e8e8;
         box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.5);
 
+        h3 {
+            font-size: 18px;
+            font-family: 'Rubik', sans-serif;
+        }
+
         .general-data {
             display: flex;
             font-family: 'Rubik', sans-serif;
@@ -260,6 +265,30 @@ header {
     }
 }
 
+@media (max-width: 768px) {
+    .container {
+        margin: auto;
+
+        .form {
+            max-width: 350px;
+
+            .h3 {
+                font-size: 16px;
+                font-family: 'Rubik', sans-serif;
+            }
+
+            .general-data {
+                max-width: 320px;
+            }
+
+            #message {
+                max-width: 320px;
+                font-family: 'Rubik', sans-serif;
+            }
+        }
+    }
+}
+
 .container-comments {
     display: flex;
     align-items: center;
@@ -269,20 +298,21 @@ header {
     background-color: #ffffff;
     flex-direction: column;
 
-    ul {
+    .comment {
         margin: 10px;
 
         li {
             margin: 30px;
             border-radius: 5px;
             border: none;
-            width: 450px;
+            width: 500px;
             height: auto;
             box-shadow: 0px 2px 10px 2px rgba(24, 183, 215, 0.5);
             padding: 5px;
             list-style: none;
 
             h4 {
+                width: 450px;
                 margin: 5px;
                 border-radius: 5px;
                 text-transform: capitalize;
@@ -293,10 +323,24 @@ header {
             p {
                 margin: 10px;
                 font-family: 'Poppins', sans-serif;
-                text-transform: capitalize;
             }
 
             .btn-delete {
+                margin-left: 450px;
+                padding: 5px;
+                background-color: #e71010;
+                border-radius: 5px;
+                border: none;
+                font-size: 18px;
+                transition: 0.4s;
+                width: 30px;
+                color: #ffffff;
+                cursor: pointer;
+
+
+                &:hover {
+                    transform: translateY(-3px);
+                }
             }
         }
     }
@@ -309,5 +353,44 @@ header {
         border-radius: 10px;
         background-color: #ffffff;
         flex-direction: column;
+        font-family: 'Rubik', sans-serif;
+    }
+}
+
+@media (max-width: 640px) {
+    .container-comments {
+        margin: 40px auto;
+
+        .comment {
+            margin: auto;
+
+            li {
+                width: 280px;
+
+                h4 {
+                    width: 270px;
+                }
+
+                .btn-delete {
+                    margin-left: 240px;
+                }
+            }
+        }
+
+
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfcfc;
+    height: 40px;
+
+    .copy {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Rubik', sans-serif;
     }
 }

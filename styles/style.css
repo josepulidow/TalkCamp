@@ -223,6 +223,11 @@ header .close-menu {
           box-shadow: 0px 20px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
+.container .form h3 {
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
+}
+
 .container .form .general-data {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,6 +345,26 @@ header .close-menu {
           transform: translateY(-3px);
 }
 
+@media (max-width: 768px) {
+  .container {
+    margin: auto;
+  }
+  .container .form {
+    max-width: 350px;
+  }
+  .container .form .h3 {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+  }
+  .container .form .general-data {
+    max-width: 320px;
+  }
+  .container .form #message {
+    max-width: 320px;
+    font-family: 'Rubik', sans-serif;
+  }
+}
+
 .container-comments {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,15 +384,15 @@ header .close-menu {
           flex-direction: column;
 }
 
-.container-comments ul {
+.container-comments .comment {
   margin: 10px;
 }
 
-.container-comments ul li {
+.container-comments .comment li {
   margin: 30px;
   border-radius: 5px;
   border: none;
-  width: 450px;
+  width: 500px;
   height: auto;
   -webkit-box-shadow: 0px 2px 10px 2px rgba(24, 183, 215, 0.5);
           box-shadow: 0px 2px 10px 2px rgba(24, 183, 215, 0.5);
@@ -375,7 +400,8 @@ header .close-menu {
   list-style: none;
 }
 
-.container-comments ul li h4 {
+.container-comments .comment li h4 {
+  width: 450px;
   margin: 5px;
   border-radius: 5px;
   text-transform: capitalize;
@@ -383,10 +409,28 @@ header .close-menu {
   font-size: 18px;
 }
 
-.container-comments ul li p {
+.container-comments .comment li p {
   margin: 10px;
   font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
+}
+
+.container-comments .comment li .btn-delete {
+  margin-left: 450px;
+  padding: 5px;
+  background-color: #e71010;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.container-comments .comment li .btn-delete:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .container-comments .empty {
@@ -406,5 +450,44 @@ header .close-menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+}
+
+@media (max-width: 640px) {
+  .container-comments {
+    margin: 40px auto;
+  }
+  .container-comments .comment {
+    margin: auto;
+  }
+  .container-comments .comment li {
+    width: 280px;
+  }
+  .container-comments .comment li h4 {
+    width: 270px;
+  }
+  .container-comments .comment li .btn-delete {
+    margin-left: 240px;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #fdfcfc;
+  height: 40px;
+}
+
+footer .copy {
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Rubik', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
