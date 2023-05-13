@@ -41,13 +41,13 @@ addBtn.addEventListener('click', (e) => {
         comment.value = '';
         empty.style.display = 'none';
 
-        // Creamos un objeto con la información del comentario
+        // Se crea un objeto con la información del comentario
         const newComment = {
             name: text,
             message: message
         };
 
-        // Convertimos el objeto a JSON y lo guardamos en localStorage
+        // Se convierte el objeto a JSON y lo guardamos en localStorage
         const comments = JSON.parse(localStorage.getItem('comments')) || [];
         comments.push(newComment);
         localStorage.setItem('comments', JSON.stringify(comments));

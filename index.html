@@ -10,6 +10,8 @@
 </head>
 
 <body>
+
+    <!-- Se crea un header el cual contiene un header y un nav -->
     <header>
         <img class="logo" src="./sources/talkcamp-logo.png" alt="">
         <button class="open-menu">
@@ -27,14 +29,15 @@
         </nav>
     </header>
 
-    
     <main>
+        <!-- En esta parte se crea un div con el tema de presentacion para indica el proposito -->
         <div class="presentation">
             <h1>TalkCamp</h1>
             <p>¿Tienes algo que decir?, aqui puedes poner todo lo que desees par quie la comunidad de Ucamp pueda
                 eschucharte.</p>
         </div>
 
+        <!-- Aqui se pone el como se agrega un comentario  -->
         <div class="how-to-add">
             <div class="instructions">
                 <h2>¿Como añadir un comentario?</h2>
@@ -47,7 +50,7 @@
             </div>
         </div>
 
-
+        <!-- Se crea un contenedor el cual almacena un formulario y se agregan los comentarios generados por medio de JS -->
         <div class="container">
             <div class="form">
                 <h3>Escribe tu comentario aquí</h3>
@@ -67,22 +70,27 @@
             </div>
         </div>
 
+        <!-- Este es el container de los comentarios que se agregan a traves del form -->
         <div class="container-comments">
             <ul class="comment">
 
             </ul>
+
+            <!-- Este mensaje aparece cada no hay algun comentario creado -->
             <div class="empty">
                 <p>Aún no agregas un comentario</p>
             </div>
         </div>
     </main>
 
+    <!-- Se crea un footer sencillo  -->
     <footer>
         <div class="copy">
             <p>Todos los derechos reservados: Emanuel Pulido &copy;</p>
         </div>
     </footer>
 
+    <!-- Se agregan los scripts -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./js/script.js"></script>

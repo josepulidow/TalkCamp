@@ -1,17 +1,19 @@
+// Se resetea el codigo
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
+// Se hace la importacion de un estilo de fuente
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,400;1,600;1,800&family=Rubik:wght@400;500;600;800&display=swap');
 
-
+// se agreag un background con un degradado
 body {
     background: linear-gradient(90deg, #18b7d7, #143ab8);
 }
 
+// Se asignan los estilos del header
 header {
     display: flex;
     align-items: center;
@@ -35,6 +37,7 @@ header {
             font-family: 'Poppins', sans-serif;
         }
 
+        // Se agrega una animacion al pasar sobre el enlace
         li a:hover {
             text-decoration: underline;
         }
@@ -45,8 +48,8 @@ header {
         display: none;
     }
 
+// Se crea un mediaquery para el menu el cual lo hace resoponsivo
     @media (max-width: 550px) {
-
         .open-menu,
         .close-menu {
             display: block;
@@ -112,6 +115,7 @@ header {
 
 }
 
+// Se agregan los estilos de la seccion de presentacion
 .presentation {
     display: flex;
     align-items: center;
@@ -138,6 +142,7 @@ header {
     }
 }
 
+// Se agregan los estilos de las indicaciones de como agregar un comentario
 .how-to-add {
     display: flex;
     align-items: center;
@@ -165,6 +170,7 @@ header {
     }
 }
 
+// Este es el container el cual contiene la parte donde se argrega el comentario
 .container {
     display: flex;
     justify-content: center;
@@ -217,33 +223,19 @@ header {
             box-shadow: #143ab8;
             padding: 10px;
 
+            // Esto cambia el color del contenido dentro del textarea
             &::placeholder {
                 color: #000000;
             }
         }
 
+
+        // Estos son estilos para la parte de los botones
         .button-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin: 10px 0;
-
-            .reload {
-                margin: 10px;
-                padding: 5px;
-                background-color: #f02828;
-                border-radius: 5px;
-                border: none;
-                font-size: 24px;
-                transition: 0.4s;
-                width: 50px;
-                color: #fdfcfc;
-                cursor: pointer;
-
-                &:hover {
-                    transform: translateY(-3px);
-                }
-            }
 
             .send {
                 margin: 10px;
@@ -265,6 +257,7 @@ header {
     }
 }
 
+// Se dan los estilos del container para dispositivos moviles haciendolo responsivo
 @media (max-width: 768px) {
     .container {
         margin: auto;
@@ -289,6 +282,7 @@ header {
     }
 }
 
+// Este es el container de los comentarios
 .container-comments {
     display: flex;
     align-items: center;
@@ -337,7 +331,7 @@ header {
                 color: #ffffff;
                 cursor: pointer;
 
-
+                // se agreaga animacion para cuando este sobre el boton
                 &:hover {
                     transform: translateY(-3px);
                 }
@@ -345,6 +339,7 @@ header {
         }
     }
 
+    // estilos del texto que aparece cuando no existan comentarios
     .empty {
         display: flex;
         align-items: center;
@@ -357,6 +352,7 @@ header {
     }
 }
 
+// Se hace responsivo el container de los comentarios
 @media (max-width: 640px) {
     .container-comments {
         margin: 40px auto;
@@ -381,6 +377,7 @@ header {
     }
 }
 
+// Se le agrega los estulos del footer
 footer {
     display: flex;
     align-items: center;
